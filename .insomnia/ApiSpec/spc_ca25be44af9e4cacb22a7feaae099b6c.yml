@@ -1,7 +1,7 @@
 _id: spc_ca25be44af9e4cacb22a7feaae099b6c
 type: ApiSpec
 parentId: wrk_91e8f25e3d37414891e6e5f2fe7aacbc
-modified: 1632014234330
+modified: 1632014493007
 created: 1624505775462
 fileName: customer-api
 contents: |
@@ -42,7 +42,7 @@ contents: |
   #         size_unit: megabytes
 
 
-  # HTTP Log plugin sends logs to Sumo Logic
+  # HTTP Log plugin sends logs to Sumo Logic 
   # x-kong-plugin-http-log:
   #   enabled: true
   #   config:
