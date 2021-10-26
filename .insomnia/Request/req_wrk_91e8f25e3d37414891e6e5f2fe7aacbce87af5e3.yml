@@ -1,7 +1,7 @@
 _id: req_wrk_91e8f25e3d37414891e6e5f2fe7aacbce87af5e3
 type: Request
 parentId: wrk_91e8f25e3d37414891e6e5f2fe7aacbc
-modified: 1627622516932
+modified: 1632103739226
 created: 1624505940260
 url: "{{ base_url }}/customers"
 name: List all customers
@@ -19,6 +19,7 @@ headers:
     value: 58hh165c070a41d5c1b58d9d3d744pa3
     description: ""
     id: pair_0f473dba234e467f89f37c955a6cc718
+    disabled: false
 authentication: {}
 metaSortKey: -1624505940260
 isPrivate: false
