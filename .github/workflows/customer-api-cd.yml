@@ -29,7 +29,8 @@ jobs:
         run: |
           mkdir ./spec-backup
           cp ./.insomnia/ApiSpec/*.yml ./spec-backup
-          ls ./spec-backup            
+          ls ./spec-backup   
+          cat ./spec-backup/*.yml
       #Installing the inso, deck and portal cli
       - name: Install NodeJS
         uses: actions/setup-node@v2
@@ -69,7 +70,8 @@ jobs:
             
       - name: Restore OAS Spec
         run: |
-          cp  ./spec-backup/*.yml ./.insomnia/ApiSpec                   
+          cp  ./spec-backup/*.yml ./.insomnia/ApiSpec  
+          cat ./spec-backup/*.yml      
       - name: Prepare URL 4 Declarative Services
         uses: cschleiden/replace-tokens@v1
         with:
