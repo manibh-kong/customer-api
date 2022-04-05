@@ -62,6 +62,7 @@ jobs:
       - name: Deploy to dev portal
         run: |          
           inso export spec customer-api --output workspaces/customer/specs/customer.yaml
+          cat workspaces/customer/specs/customer.yaml
           cp workspaces/customer/cli.conf.yaml.example workspaces/customer/cli.conf.yaml
           portal deploy --preserve customer
         env:
@@ -85,6 +86,7 @@ jobs:
       # Generate declarative config
       - name: Generate declarative config
         run: |
+          cat ./.insomnia/ApiSpec/*.yml
           inso generate config customer-api --tags customer-api --type declarative --output kong.yaml 
           cat kong.yaml
 
